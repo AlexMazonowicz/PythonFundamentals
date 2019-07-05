@@ -1,20 +1,19 @@
-import sys
-
-def convert_unit(value, src_unit, dest_unit):	
-	# write a docstring here by deleting this line    
-
-	# your code starts here.
-	result = -1
+def convert_kg(value):
+    # Your code starts here
+    pounds = value * 2.20462
+    ounces = value * 35.274
+    print (value, "kg converted is", pounds,"pounds and", ounces,"ounces.")
 	
-	return result # return the equivalent converted unit
+def convert_pound(value):
+    # Your code starts here
+    kg = value * 0.453592 
+    ounces = value * 16
+    print (value, "pounds converted is", kg,"kg and", ounces,"ounces.")
 
-if __name__ == "__main__":
-    print("execuet your function below")
-
-    # take input from command line
-    value, src_unit, dest_unit = # command line input
-    
-    # call function convert_unit
-    convert_unit(value, src_unit, dest_unit)
+def convert_ounce(value):
+    # Your code starts here
+    kg = value * 0.0283  
+    pound = value * 0.0625
+    print (value, "ounces converted is", kg,"kg and", pound,"pounds.")
 
 
